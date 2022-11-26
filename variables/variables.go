@@ -137,6 +137,19 @@ func example5() {
 
 }
 
+func challange() {
+	var first byte = 10
+	var second = "hello"
+
+	third := 3.2
+
+	third = third + float64(first)
+
+	fmt.Println(first)
+	fmt.Println(second)
+	fmt.Println(third)
+}
+
 // RunExamples executes the code included in the examples
 func RunExamples() {
 	example1()
@@ -144,4 +157,6 @@ func RunExamples() {
 	example3()
 	example4()
 	example5()
+
+	challange()
 }

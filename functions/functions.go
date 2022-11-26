@@ -119,5 +119,5 @@ func RunExamples() {
 }
 
 func RunChallanges() {
-
+	runLength()
 }

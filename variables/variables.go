@@ -158,5 +158,11 @@ func RunExamples() {
 	example4()
 	example5()
 
+}
+
+func RunChallanges() {
 	challange()
+	runStrings()
+	runSlices()
+	runMaps()
 }

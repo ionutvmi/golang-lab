@@ -2,7 +2,7 @@ package variables
 
 import "fmt"
 
-func RunStrings() {
+func runStrings() {
 	var source = "Some days are ☀️, and other days are 🌧."
 	var sunny = source[0:20]
 	var rainy = source[26 : len(source)-1]

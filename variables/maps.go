@@ -2,7 +2,7 @@ package variables
 
 import "fmt"
 
-func RunMaps() {
+func runMaps() {
 
 	var scores = map[string]int{
 		"Yankees": 10,

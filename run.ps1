@@ -24,18 +24,22 @@ param(
 
 function Invoke-Help { 
     $help = Get-Help $PSCommandPath
-    Write-Host $help.SYNOPSIS
-    Write-Host ""
-    Write-Host $help.DESCRIPTION.Text
+    Write-Output $help.SYNOPSIS
+    Write-Output ""
+    Write-Output $help.DESCRIPTION.Text
 }
 
 function Invoke-Start {
-    go run main.go
+    go build -o dist/
+
+    & "./dist/golang-lab" variables
+
+    & "./dist/golang-lab" functions 44 55
 }
 
 function Invoke-Doc {
     gomarkdoc --output doc.md ./...
-    Write-Host "File doc.md was generated"
+    Write-Output "File doc.md was generated"
 }
 
 if (!$Command) {

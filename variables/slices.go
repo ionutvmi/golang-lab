@@ -2,7 +2,7 @@ package variables
 
 import "fmt"
 
-func RunSlices() {
+func runSlices() {
 	var values []int
 
 	fmt.Println(len(values))

@@ -9,7 +9,12 @@ USAGE
 COMMANDS
     start       compile and run the project
     doc         generate the project documentation in the doc.md file
-    help, -?    show this help message
+    help        show this help message
+    -?          show full help
+
+.EXAMPLE
+./run.ps1 start
+
 #>
 param(
     [Parameter(Position = 0)]
@@ -18,7 +23,10 @@ param(
 )
 
 function Invoke-Help { 
-    Get-Help $PSCommandPath 
+    $help = Get-Help $PSCommandPath
+    Write-Host $help.SYNOPSIS
+    Write-Host ""
+    Write-Host $help.DESCRIPTION.Text
 }
 
 function Invoke-Start {
@@ -38,5 +46,9 @@ if (!$Command) {
 switch ($Command) {
     "start" { Invoke-Start }
     "doc" { Invoke-Doc }
-    "help" { Command-Help }
+    "help" { Invoke-Help }
 }
+
+# Credits
+# CLI Template https://kevinareed.com/2021/04/14/creating-a-command-based-cli-in-powershell/
+

@@ -11,6 +11,7 @@ func main() {
 
 	if len(os.Args) < 2 {
 		fmt.Println("Missing action parameter")
+		os.Exit(1)
 		return
 	}
 

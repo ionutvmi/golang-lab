@@ -36,6 +36,8 @@ function Invoke-Start {
 
     & "./dist/golang-lab" functions 44 55
     & "./dist/golang-lab" functions 44 0
+
+    & "./dist/golang-lab" methods
 }
 
 function Invoke-Doc {

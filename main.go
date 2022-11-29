@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"golang-lab/functions"
+	"golang-lab/methods"
 	"golang-lab/variables"
 	"os"
 )
@@ -32,4 +33,13 @@ func main() {
 		fmt.Println("---------- FUNCTIONS CHALLANGES ----------")
 		functions.RunChallanges()
 	}
+
+	if action == "methods" {
+		fmt.Println("---------- METHODS ----------")
+		methods.RunExamples()
+
+		fmt.Println("---------- METHODS CHALLANGES ----------")
+		methods.RunChallanges()
+	}
+
 }

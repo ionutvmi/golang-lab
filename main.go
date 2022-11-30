@@ -6,12 +6,14 @@ import (
 	"golang-lab/logger"
 	"golang-lab/methods"
 	"golang-lab/variables"
+	"log"
 	"os"
 )
 
 func main() {
-
 	defer logger.Close()
+
+	log.Println("Starting app execution")
 
 	if len(os.Args) < 2 {
 		fmt.Println("Missing action parameter")
@@ -45,4 +47,5 @@ func main() {
 		methods.RunChallenges()
 	}
 
+	log.Println("Completed the app execution")
 }

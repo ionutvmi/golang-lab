@@ -5,11 +5,15 @@ import (
 	"golang-lab/functions"
 	"golang-lab/methods"
 	"golang-lab/variables"
+	"golang-lab/logger"
 	"os"
 )
 
 func main() {
 
+	defer logger.Close()
+
+	
 	if len(os.Args) < 2 {
 		fmt.Println("Missing action parameter")
 		os.Exit(1)

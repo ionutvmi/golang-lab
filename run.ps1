@@ -37,7 +37,8 @@ function Invoke-Start {
     & "./dist/golang-lab" functions 44 55
     & "./dist/golang-lab" functions 44 0
 
-    & "./dist/golang-lab" methods
+    & "./dist/golang-lab" methods op:count start:quick stop:the file:/tmp/file1.txt
+    & "./dist/golang-lab" methods op:watch stop:fox file:/tmp/file3.txt
 }
 
 function Invoke-Doc {

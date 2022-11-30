@@ -98,4 +98,5 @@ func RunExamples() {
 }
 
 func RunChallanges() {
+	runScan()
 }

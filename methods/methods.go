@@ -97,6 +97,6 @@ func RunExamples() {
 	example1()
 }
 
-func RunChallanges() {
+func RunChallenges() {
 	runScan()
 }

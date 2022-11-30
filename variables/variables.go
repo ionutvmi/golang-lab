@@ -160,7 +160,7 @@ func RunExamples() {
 
 }
 
-func RunChallanges() {
+func RunChallenges() {
 	challange()
 	runStrings()
 	runSlices()
